@@ -1,0 +1,31 @@
+Time : 18:04:33
+SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'ucc_engine_cm' at row 1
+Raw SQL : insert into engine  (ucc_id,ucc_name,ucc_engine_cm,ucc_engine_inc,ucc_engine_lit,ucc_engine_pow,ucc_price,ucc_loc)  values ('UCC-buatanmu-20201204-180433','buatanmu','','','','900','90000','burma')
+
+Time : 17:54:22
+SQLSTATE[01000]: Warning: 1265 Data truncated for column 'ucc_engine_cm' at row 1
+Raw SQL : insert into engine  (ucc_id,ucc_name,ucc_engine_cm,ucc_engine_inc,ucc_engine_lit,ucc_engine_pow,ucc_price,ucc_loc)  values ('UCC-buriram-20201204-175422','buriram','','','','900','9000','kuala')
+
+Time : 17:51:40
+SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'ucc_engine_cm' at row 1
+Raw SQL : insert into engine  (ucc_id,ucc_name,ucc_engine_cm,ucc_engine_inc,ucc_engine_lit,ucc_engine_pow,ucc_price,ucc_loc)  values ('UCC-bumi-20201204-175140','bumi','','','','9000','90000','kiara')
+
+Time : 17:48:16
+SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'ucc_engine_cm' at row 1
+Raw SQL : insert into engine  (ucc_id,ucc_name,ucc_engine_cm,ucc_engine_inc,ucc_engine_lit,ucc_engine_pow,ucc_price,ucc_loc)  values ('UCC-Ferrari-20201204-174816','Ferrari','','','','900','980000','Rio')
+
+Time : 17:46:29
+SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'ucc_engine_cm' at row 1
+Raw SQL : insert into engine  (ucc_id,ucc_name,ucc_engine_cm,ucc_engine_inc,ucc_engine_lit,ucc_engine_pow,ucc_price,ucc_loc)  values ('UCC-Ferrari-20201204-174629','Ferrari','','','','900','90000','burma')
+
+Time : 17:41:19
+SQLSTATE[01000]: Warning: 1265 Data truncated for column 'ucc_engine_cm' at row 1
+Raw SQL : insert into engine  (ucc_id,ucc_name,ucc_engine_cm,ucc_engine_inc,ucc_engine_lit,ucc_engine_pow,ucc_price,ucc_loc)  values ('UCC-Ferrari-20201204-174119','Ferrari','','','','100','150000','burma')
+
+Time : 17:35:27
+SQLSTATE[01000]: Warning: 1265 Data truncated for column 'ucc_engine_cm' at row 1
+Raw SQL : insert into engine  (ucc_id,ucc_name,ucc_engine_cm,ucc_engine_inc,ucc_engine_lit,ucc_engine_pow,ucc_price,ucc_loc)  values ('UCC-Ferrari-20201204-173527','Ferrari','','','','800','80000','Verona')
+
+Time : 16:54:22
+SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'ucc_id' at row 1
+Raw SQL : insert into engine  (ucc_id,ucc_name,ucc_engine_disp,ucc_engine_pow,ucc_price,ucc_loc)  values ('UCC-dirinya-2020-12-04 16:54:22','dirinya','90','900','900','pompei')

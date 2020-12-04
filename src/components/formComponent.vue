@@ -1,9 +1,14 @@
 <template>
-    <div>
+
+    <div >
+        <div class="text-h5 mb-3 mt-3 text-center white--text">
+            Add Your Vehicle
+        </div>
          <v-form
             ref="form"            
             v-model="valid"
             lazy-validation
+            class="mx-2"
           >
             <v-text-field
               v-model="formdata.ucc_name"
@@ -52,7 +57,7 @@
               :disabled="!valid"
               
               color="success"
-              class="mr-4"
+              class="mx-4"
               @click="submit"
             >
               Submit
@@ -60,7 +65,7 @@
 
             <v-btn
               color="error"
-              class="mr-4"
+              class="mx-4"
               @click="reset"
             >
               Reset Form
