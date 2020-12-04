@@ -14,73 +14,10 @@
       <v-navigation-drawer app v-model="drawer"   
         right
         width="40%"
-        color="primary"
+        color="secondary"
+        dark
         >
-        <v-form
-            ref="form"
-            v-model="valid"
-            lazy-validation
-          >
-            <v-text-field
-              v-model="name"
-              :counter="20"
-              :rules="nameRules"
-              label="Name"
-              required
-            ></v-text-field>
-
-            <v-text-field
-              v-model="engine_dis"
-              :rules="nameRules"
-              label="Engine Display Size"
-              required
-            ></v-text-field>
-
-            <v-select
-              v-model="select"
-              :items="items"
-              :rules="[v => !!v || 'Item is required']"
-              label="Engine Display Type"
-              required
-            ></v-select>            
-            <v-text-field
-              v-model="engine_Power"
-              :rules="nameRules"
-              label="Engine Power Size"
-              required
-            ></v-text-field>
-
-            <v-text-field
-              v-model="price"
-              :rules="nameRules"
-              label="Price"
-              required
-            ></v-text-field>
-
-            <v-text-field
-              v-model="location"
-              :rules="nameRules"
-              label="Location"
-              required
-            ></v-text-field>
-           
-            <v-btn
-              :disabled="!valid"
-              color="success"
-              class="mr-4"
-              @click="validate"
-            >
-              Validate
-            </v-btn>
-
-            <v-btn
-              color="error"
-              class="mr-4"
-              @click="reset"
-            >
-              Reset Form
-            </v-btn>
-          </v-form> 
+        <form-component> </form-component>
       </v-navigation-drawer>
     </v-card>
 
@@ -104,35 +41,17 @@
   </v-app>
 </template>
 <script>
+import formComponent from './components/formComponent'
+
 export default {
   name: 'App',
   data: () => ({
     drawer: false,
-    valid: true,
-    name: '',
-    engine_dis: '',
-    engine_Power: '',
-    price: '',
-    location: '',
-    nameRules: [
-      v => !!v || 'Name is required',
-      v => (v && v.length <= 20) || 'Name must be less than 10 characters',
-    ],    
-    select: null,
-    items: [
-      'Centimetres',
-      'Cubic Inches',
-      'Liter',      
-    ],
-    
   }),
-  methods: {
-      validate () {
-        this.$refs.form.validate()
-      },
-      reset () {
-        this.$refs.form.reset()
-      },
-}
+  components:{
+    formComponent
+  }
+  
 }
 </script>
+    

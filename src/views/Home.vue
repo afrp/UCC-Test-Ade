@@ -10,13 +10,19 @@
             Name
           </th>
           <th class="text-left">
-            Engine Display
+            ED (cm cubic)
           </th>
           <th class="text-left">
-            Engine Power
+            ED (inc cubic)
           </th>
           <th class="text-left">
-            Price
+            ED (liter)
+          </th>
+          <th class="text-left">
+            Engine Power (HP)
+          </th>
+          <th class="text-left">
+            Price (USD)
           </th>
           <th class="text-left">
             Location
@@ -30,7 +36,9 @@
         >
           <td>{{ item.ucc_id }}</td>
           <td>{{ item.ucc_name }}</td>
-          <td>{{ item.ucc_engine_disp }}</td>
+          <td>{{ item.ucc_engine_cm }}</td>
+          <td>{{ item.ucc_engine_inc }}</td>
+          <td>{{ item.ucc_engine_lit }}</td>
           <td>{{ item.ucc_engine_pow }}</td>
           <td>{{ item.ucc_price }}</td>
           <td>{{ item.ucc_loc }}</td>
