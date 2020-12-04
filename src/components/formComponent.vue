@@ -35,7 +35,7 @@
             <v-text-field
               v-model="formdata.ucc_engine_pow"
               :rules="nameRules"
-              label="Engine Power Size"
+              label="Engine Power Size (HP)"
               required
             ></v-text-field>
 
@@ -111,9 +111,9 @@ export default {
           ucc_loc:this.formdata.ucc_loc
          })
          .then(res => {
-           this.created
            console.log(res)
-          this.reset()          
+           alert("Data Has been Inserted")
+           this.reset()          
          })
          .catch(err => {
         console.log(err);        
