@@ -12,7 +12,7 @@
           >
             <v-text-field
               v-model="formdata.ucc_name"
-              :counter="20"
+              :counter="15"
               :rules="nameRules"
               label="Name"
               required
